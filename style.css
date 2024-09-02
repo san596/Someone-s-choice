@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+
+
+header {
+    position: relative;
+    height: 120px; /* Adjusted to maintain space */
+}
+
+.neon-heart {
+    font-size: 100px;
+    color: #ff0080;
+    animation: pulse 1.5s infinite;
+    text-shadow: 0 0 10px #ff0080, 0 0 20px #ff0080, 0 0 30px #ff0080, 0 0 40px #ff0080;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header h2 {
+    font-size: 36px;
+    color: #ff0080;
+    margin-top: 100px; /* Adjusted to clear space for the heart */
+    text-shadow: 0 0 10px #ff0080;
+}
+
+.confession p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 20px 0;
+    text-shadow: 0 0 5px #ff0080;
+}
+
+footer p {
+    font-size: 18px;
+    color: #ff0080;
+    text-shadow: 0 0 5px #ff0080;
+    margin-top: 20px;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: translateX(-50%) scale(1);
+    }
+    50% {
+        transform: translateX(-50%) scale(1.1);
+    }
+}
